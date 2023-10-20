@@ -25,6 +25,8 @@ A tracking link generator, that tracks certain data from visiting users.
 
 ## Note
 
+Location data will not work if you are running this on localhost, as express will return "::1" as the IP address of the visitor.
+
 This tracking link generator is meant to be a proof of concept and is not scaled for multiple users.
 
 This can be very easily scaled to accomodate multiple users by simply adding a "created_by" field in the Link schema, if your website has multiple users.
